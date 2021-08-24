@@ -26,9 +26,6 @@ const DetailedView = ({ country }) => {
     </ul>
     <img src={country.flag} alt={`Flag of ${country.name}`} height="200" width="200"/>
     <h2>Weather in {country.capital}</h2>
-    {/* <p><strong>temperature:</strong> {weather.current.temperature} Celcius</p>
-    <img src={weather.current.weather_icons[0]}/>
-    <p><strong>wind:</strong> {weather.current.wind_speed} km/h, direction {weather.current.wind_dir}</p> */}
     {(typeof weather.current != 'undefined') ? (
       <>
       <p><strong>temperature:</strong> {weather.current.temperature} Celcius</p>
